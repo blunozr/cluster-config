@@ -14,7 +14,7 @@ installation pattern for repos in this organization. It expects ArgoCD to be ins
 for you (i.e. you used the other repos to configure argocd), you can install this repo by running:
 
 ```
-oc apply -k https://github.com/redhat-canada-gitops/cluster/overlays/std
+oc apply -k https://github.com/redhat-canada-gitops/01-cluster-config/cluster/overlays/std
 ```
 
 If argocd is installed in a different namespace or you want to modify settings, you can create an overlay in your own repo pointing to this one and modify using kustomize's patch capability. For example, to change the namespace provide create a kustomization.yaml file as follows:
