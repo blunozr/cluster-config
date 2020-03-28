@@ -17,7 +17,7 @@ for you (i.e. you used the other repos to configure argocd), you can install thi
 oc apply -k https://github.com/redhat-canada-gitops/01-cluster-config/cluster/overlays/std
 ```
 
-If argocd is installed in a different namespace or you want to modify settings, you can create an overlay in your own repo pointing to this one and modify using kustomize's patch capability. For example, to change the namespace provide create a kustomization.yaml file as follows:
+If argocd is installed in a different namespace or you want to modify settings, you can create an overlay in your own repo pointing to this one and modify using kustomize's patch capability. For example, to change the namespace create a kustomization.yaml file as follows:
 
 ```
 apiVersion: kustomize.config.k8s.io/v1beta1
