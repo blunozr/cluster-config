@@ -5,3 +5,6 @@ namespace: openshift-secrets
 
 bases:
 - ../../base
+
+resources:
+- namespace.yaml
