@@ -1,0 +1,3 @@
+- op: add
+  path: /users/-
+  value: "system:serviceaccount:sealed-secrets:sealed-secrets-controller"
