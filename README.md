@@ -9,12 +9,12 @@ Includes:
 
 ## Setup
 
-This repo uses Kustomize to manage environment specific variables. By default, it includes a single overlay called 'std' following an OOTB
+This repo uses Kustomize to manage environment specific variables. By default, it includes a single overlay called ```default``` following an OOTB
 installation pattern for repos in this organization. It expects ArgoCD to be installed in a namespace called ```argocd```, if this is the case
 for you (i.e. you used the other repos to configure argocd), you can install this repo by running:
 
 ```
-oc apply -k https://github.com/redhat-canada-gitops/01-cluster-config/cluster/overlays/std
+oc apply -k https://github.com/redhat-canada-gitops/01-cluster-config/cluster/overlays/default
 ```
 
 If argocd is installed in a different namespace or you want to modify settings, you can create an overlay in your own repo pointing to this one and modify using kustomize's patch capability. For example, to change the namespace create a kustomization.yaml file as follows:
