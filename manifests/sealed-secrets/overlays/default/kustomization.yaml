@@ -5,6 +5,7 @@ namespace: sealed-secrets
 
 bases:
 - ../../base
+- ../../../scc/base
 
 resources:
 - namespace.yaml
