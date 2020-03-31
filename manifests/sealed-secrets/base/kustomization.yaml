@@ -7,7 +7,6 @@ resources:
 - key-admin-role.yaml
 - service-proxier-role.yaml
 - serviceaccount.yaml
-- scc.yaml
 - clusterrolebinding.yaml
 - controller-role-binding.yaml
 - rolebinding.yaml
