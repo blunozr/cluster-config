@@ -4,3 +4,4 @@ kind: Kustomization
 resources:
 - auth-htpass.yaml
 - sealed-secrets.yaml
+- container-security-operator.yaml
