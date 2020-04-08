@@ -9,4 +9,4 @@ spec:
   name: container-security-operator
   source: community-operators
   sourceNamespace: openshift-marketplace
-  startingCSV: container-security-operator.v1.0.2
+  startingCSV: container-security-operator.v1.0.1
